@@ -1,0 +1,246 @@
+
+/* 整個版面的樣式 -------------------------------- */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow: auto;
+	background-image:url("../image/background.jpg");
+}
+
+/* 中間區塊 -------------------------------------- */ 
+#middle {
+	width: 100%;
+	position: absolute;
+	top: 80px;		
+	bottom: 10px;	
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+}
+
+/*表格--------------------------------------------- */
+#t01{
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#t01 tr:nth-child(even) {
+	height: 40px;
+	background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+	height: 40px;
+	background-color:#fff;
+}
+#t01 th {
+	padding: 5px 3px;
+	background-color: black;
+	color: white;
+}
+#t01 td {
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+#t01 .add {
+	width: 85%;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+#t01 .modify {
+	display: none;
+	width: 85%;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+/*表格2--------------------------------------------- */
+#t02{
+	width: 60%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#t02 tr:nth-child(even) {
+	height: 40px;
+	background-color: #eee;
+}
+#t02 tr:nth-child(odd) {
+	height: 40px;
+	background-color:#fff;
+}
+#t02 th {
+	padding: 5px 3px;
+	background-color: black;
+	color: white;
+}
+#t02 td {
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+#t02 .add {
+	width: 85%;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+#t02 .modify {
+	display: none;
+	width: 85%;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+/* 主要內容 -------------------------------------- */
+#main {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0px 5%;  
+	text-align: center;
+}
+
+/* Menu Bar Style
+-----------------------------------------------------------------------------*/
+#menu {
+	margin:0px 0px 0px 0px;
+	height:15%;
+	position:relative;
+	z-index:1;
+}
+#menu ul {
+	/* 取消ul預設的內縮及樣式 */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	display: inline-block;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 20px;
+}
+#menu li {
+	margin: 10px 2px;
+	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+	color:blue;
+	font-size:22px;
+}
+
+#menu a,
+#menu a:link {
+	background-color: #fff;
+	color: #333;
+	display: block;
+	padding: 0 30px;
+	text-decoration: none;
+	line-height: 40px;
+}
+#menu a:hover {
+	background: #000;
+	color: #fff;
+}
+#menu .active a,
+#menu li:hover > a {
+	/* menu()的 button hover, active */
+	background: #4400B3 url(overlay.png) repeat-x 0 -40px;  /* 滑鼠滑過去的顏色 */
+	color: #FFFFFF;
+	border-top: solid 0px #f8f8f8;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0px 0 #222222;
+	font-size: 22px;
+}
+#menu ul ul li:hover a,
+#menu li:hover li a {
+	background: none;
+	border: none;
+	color: #111111;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#menu li:hover > ul {
+	display: block;
+}
+#menu ul ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 230px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background: #f9f9f9 url(overlay.png) repeat-x 0 0;
+	border: solid 1px #b4b4b4;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	z-index:1;
+}
+#menu ul ul li {
+	float: none;
+	margin: 0;
+	padding: 3px;
+}
+#menu ul ul a,
+#menu ul ul a:link {
+	/* showmenu()的 下拉選單 */
+	font-weight: normal;
+	font-size: 22px;
+
+}
+#menu ul ul a:hover {
+	background: #4400B3 url(overlay.png) repeat-x 0 -100px !important; /* 滑鼠滑過去的顏色 */
+	color: #FFFFFF !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#menu ul:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+* html #menu ul {
+	height: 1%;
+}
+
+/* 參考：Glyphicons字體圖示 http://v3.bootcss.com/components/ */
+@font-face{
+	font-family: 'Glyphicons Halflings';
+	src: url(../menu/glyphicons-halflings-regular.eot);
+	src: url(../menu/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+		 url(../menu/glyphicons-halflings-regular.woff2) format('woff2'),
+		 url(../menu/glyphicons-halflings-regular.woff) format('woff'),
+		 url(../menu/glyphicons-halflings-regular.ttf) format('truetype'),
+		 url(../menu/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+}
+.glyphicon{
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

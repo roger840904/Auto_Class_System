@@ -1,0 +1,123 @@
+
+.checkList {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	text-align: center;
+}
+.checkList .yes {
+	color: #0088FF;
+	font-weight: bold;
+}
+.checkList .no {
+	color: #FF8800;
+	font-weight: bold;
+}
+.checkList .showModal {
+	color: #AA33DD;
+	font-weight: bold;
+	cursor: pointer;
+}
+.checkList .showModal:hover {
+	color: #FF0000;
+}
+.checkList .showModal:active {
+	text-shadow: 2px 2px 3px #CCCCCC;
+}
+
+.addSurvey {
+	position: absolute;
+	right: 120px;
+}
+
+.convertPDFbtn {
+	position: absolute;
+	right: 60px;
+	cursor: pointer;
+}
+.exportEXCELbtn {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}
+
+.setImg {
+	width:  50px;
+	height: 50px;
+}
+
+/* 新增表格
+-----------------------------------------------------------------------------*/
+#tableAdd{
+	width: 90%;
+	float: left; 
+	margin: 0 20px 20px 0;
+	border: 1px solid #6666B8;
+	border-collapse: collapse;
+}
+#tableAdd th {
+	height: 40px;
+	background-color: #6666B8;
+	color: white;
+}
+#tableAdd td {
+	padding: 10px;
+	border: 1px solid #6666B8;
+	background-color: #DDDDFF;
+	text-align: center;
+}
+#tableAdd .add {
+	width: 85%;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+/* button 樣式
+-----------------------------------------------------------------------------*/
+.btnPurple_small {
+	-moz-box-shadow: inset 0px 1px 0px 0px #DDBBFF;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #DDBBFF;
+	box-shadow: inset 0px 1px 0px 0px #DDBBFF;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #AAAAFF), color-stop(1, #5555EE));
+	background: -moz-linear-gradient(top, #AAAAFF 5%, #5555EE 100%);
+	background: -webkit-linear-gradient(top, #AAAAFF 5%, #5555EE 100%);
+	background: -o-linear-gradient(top, #AAAAFF 5%, #5555EE 100%);
+	background: -ms-linear-gradient(top, #AAAAFF 5%, #5555EE 100%);
+	background: linear-gradient(to bottom, #AAAAFF 5%, #5555EE 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAFF', endColorstr='#5555EE',GradientType=0);
+	background-color: #AAAAFF;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #3333AA;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 6px 16px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #3333AA;
+}
+.btnPurple_small:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5555EE), color-stop(1, #AAAAFF));
+	background: -moz-linear-gradient(top, #5555EE 5%, #AAAAFF 100%);
+	background: -webkit-linear-gradient(top, #5555EE 5%, #AAAAFF 100%);
+	background: -o-linear-gradient(top, #5555EE 5%, #AAAAFF 100%);
+	background: -ms-linear-gradient(top, #5555EE 5%, #AAAAFF 100%);
+	background: linear-gradient(to bottom, #5555EE 5%, #AAAAFF 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5555EE', endColorstr='#AAAAFF',GradientType=0);
+	background-color: #5555EE;
+	text-decoration: underline;
+}
+.btnPurple_small:active {
+	position: relative;
+	top: 1px;
+	text-decoration: underline;
+}
