@@ -1,0 +1,20 @@
+<?php
+header("Content-Type:text/html; charset=utf-8");
+//資料庫位置
+$db_server = "localhost";
+//資料庫名稱
+$db_name = "teacher";
+//資料庫管理者帳號
+$db_user = "root";
+//資料庫管理者密碼
+$db_passwd = "";
+//對資料庫連線
+if(!@mysql_connect($db_server, $db_user, $db_passwd))
+	die("Can not connect to the database");
+//資料庫連線採UTF8
+mysql_query("SET NAMES utf8");
+
+//選擇資料庫
+if(!@mysql_select_db($db_name))
+	die("Can not use the database");
+?> 
